@@ -1,14 +1,16 @@
-#Mining Traffic Recife
+# Mining Traffic Recife
 Versão: 1.0
 
------ Pré-Requisitos: ------
+# ----- Pré-Requisitos: ------
 Sistema operacional: Windows
 Linguagem: Python 3.6
 Para criar o banco: MySQL Workbench 8.0.11
 Para rodar a aplicação: XAMPP v3.2.2 ou Wamp Server
 
------ Guia de instalação para rodar o projeto: -----
-Para baixar o código da aplicação, basta ir no github, no link: “https://github.com/ProjetoDeBD/traffic-mining-recife.git”, clicar em “Clone or download”, e copiar o link. Você pode importar o projeto pelo próprio Pycharm ou instalando o GIT em sua máquina, para utilizar o Git Bash. Basta criar uma pasta onde ficará o código do projeto, clica nela com o botão direito em “Git bash here”, e ao abrir o terminal do git, colocar:  “git clone https://github.com/ProjetoDeBD/traffic-mining-recife.git” e esperar fazer o download do projeto.
+# ----- Guia de instalação para rodar o projeto: -----
+Para baixar o código da aplicação, basta ir no github, no link: “https://github.com/ProjetoDeBD/traffic-mining-recife.git”, clicar em “Clone or download”, e copiar o link.
+Você pode importar o projeto pelo próprio Pycharm ou instalando o GIT em sua máquina, para utilizar o Git Bash.
+Basta criar uma pasta onde ficará o código do projeto, clica nela com o botão direito em “Git bash here”, e ao abrir o terminal do git, colocar:  “git clone https://github.com/ProjetoDeBD/traffic-mining-recife.git” e esperar fazer o download do projeto.
 Para criar o banco já povoado, basta abrir o arquivo “traffic_mining_recife.sql” dentro da pasta principal do projeto (“traffic-mining-recife”) pelo MySQL Workbench e rodar o script, porém, essa forma pode demorar muito. Uma outra forma mais rápida é abrir o arquivo “traffic_mining_recifel.sql” com um editor de texto de sua preferência (indicamos o Sublime Text), copiar o conteúdo do script, e iniciar o Workbench, criando uma query, onde você vai colar o conteúdo dentro dela, e botar para rodar. Lembre de esperar até todo o processo ser concluído. Pronto o banco será criado, aí é só dar o phyton run.py runserver para rodar a aplicação. Esse processo deve ser feito uma única vez.
 Indicamos que para rodar essa aplicação, é melhor utilizar um ambiente virtual disponível na própria pasta principal do projeto, cujo o nome é “venv”. Porém, você pode instalar também as bibliotecas utilizadas diretamente na sua máquina.
 Observação:
@@ -18,8 +20,8 @@ Iniciando o ambiente virtual: copie o endereço da pasta “venv”. Abra o CMD 
 Agora vamos abrir a pasta do projeto. Vá no diretório onde você clonou a pasta do projeto, copie o endereço, abra o CMD e digite: “cd “ e cole o endereço. Depois digite: “python run.py runserver” e espere rodar. Ao rodar, será mostrado o link do ser servidor local (“http://127.0.0.1:5000/”). Copie isso e jogue em um navegador web para abrir a aplicação.
 
 
------ Autoria: -----
-#Alunos da Universidade Federal Rural de Pernambuco: 
+# ----- Autoria: -----
+# Alunos da Universidade Federal Rural de Pernambuco: 
 Adailson José
 Augusto Paiva
 Gabriela Peixoto
