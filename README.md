@@ -22,7 +22,7 @@ Agora vamos abrir a pasta do projeto. Vá no diretório onde você clonou a past
 
 # ----- Autoria: -----
 # Alunos da Universidade Federal Rural de Pernambuco: 
-Adailson José
+Adailson José\n \n
 Augusto Paiva
 Gabriela Peixoto
 Gutenberg Barros
