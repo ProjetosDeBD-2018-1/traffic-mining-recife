@@ -30,7 +30,6 @@ def getTodosAcidentesFiltro(dados='', tipoDeDado=''):
         return coordenadas
     return None
 
-
 def getTodosAcidentesFiltro2(comp_select_ano ='', comp_select_mes ='', comp_select_bairro ='', comp_select_qtd_vitimas =''):
     listaAcidente = getAcidentesFiltro2(comp_select_ano, comp_select_mes, comp_select_bairro, comp_select_qtd_vitimas)
     listaDados = []
