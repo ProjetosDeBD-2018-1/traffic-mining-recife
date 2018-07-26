@@ -112,7 +112,7 @@
     <form action="" method="POST">
         {{ form.csrf_token }}
         <div class="form-group">
-            <label>Buscar Acidentes Por Localização</label>
+            <label>Buscar Por Local</label>
             {{ form.buscaLocal(class="form-control",
             placeholder="'Digite o local Ex: Boa Viagem'") }}
             {% if form.errors.buscaLocal %}
