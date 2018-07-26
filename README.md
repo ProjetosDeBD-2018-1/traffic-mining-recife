@@ -30,9 +30,14 @@ As bibliotecas utilizadas no projeto estão no arquivo “requirements.txt” de
 # ----- Autoria: -----
 Alunos da Universidade Federal Rural de Pernambuco: 
 
-Adailson José\n \n
+Adailson José
+
 Augusto Paiva
+
 Gabriela Peixoto
+
 Gutenberg Barros
+
 Jadeilson Rocha
+
 João D’Amorim
