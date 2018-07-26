@@ -17,18 +17,18 @@ Para rodar a aplicação: XAMPP v3.2.2 ou Wamp Server
 
 3. Indicamos que para rodar essa aplicação, é melhor utilizar um ambiente virtual disponível na própria pasta principal do projeto, cujo o nome é “venv”. Porém, você pode instalar também as bibliotecas utilizadas diretamente na sua máquina.
 
-Observação:
+4. Observação:
 As bibliotecas utilizadas no projeto estão no arquivo “requirements.txt” dentro da pasta principal do projeto (“traffic-mining-recife”). Caso queira instalar manualmente em sua máquina, basta localizar a pasta onde o Python foi instalado em seu computador, e dentro da pasta “SCRIPT”, copie e cole dentro dela o arquivo “requirements.txt”. Depois você copia o endereço da pasta, abre o CMD, digita “cd” e cola o endereço para entrar nessa pasta. Depois é só digitar “pip install -r requirements.txt” e esperar a instalação de todas as bibliotecas que estão contidas dentro desse arquivo.
 
-4. Para rodar a aplicação, vamos primeiro botar o banco para rodar, utilizando o XAMPP: ao abrir o XAMPP, dar “start” no Apache e MySQL. Se quiser olhar o banco, é só clicar em “Admin” na linha do MySQL.
+5. Para rodar a aplicação, vamos primeiro botar o banco para rodar, utilizando o XAMPP: ao abrir o XAMPP, dar “start” no Apache e MySQL. Se quiser olhar o banco, é só clicar em “Admin” na linha do MySQL.
 
-5. Iniciando o ambiente virtual: copie o endereço da pasta “venv”. Abra o CMD e digite: “cd ” e cole o endereço copiado anteriormente. Agora você está dentro da pasta “venv”. Vamos agora iniciar o ambiente. Digite: “venv\Scripts\activate”. Você verá que vai aparecer no início da linha “(venv)”. Isso indica que o ambiente está pronto para uso.
+6. Iniciando o ambiente virtual: copie o endereço da pasta “venv”. Abra o CMD e digite: “cd ” e cole o endereço copiado anteriormente. Agora você está dentro da pasta “venv”. Vamos agora iniciar o ambiente. Digite: “venv\Scripts\activate”. Você verá que vai aparecer no início da linha “(venv)”. Isso indica que o ambiente está pronto para uso.
 
-6. Agora vamos abrir a pasta do projeto. Vá no diretório onde você clonou a pasta do projeto, copie o endereço, abra o CMD e digite: “cd “ e cole o endereço. Depois digite: “python run.py runserver” e espere rodar. Ao rodar, será mostrado o link do ser servidor local (“http://127.0.0.1:5000/”). Copie isso e jogue em um navegador web para abrir a aplicação.
+7. Agora vamos abrir a pasta do projeto. Vá no diretório onde você clonou a pasta do projeto, copie o endereço, abra o CMD e digite: “cd “ e cole o endereço. Depois digite: “python run.py runserver” e espere rodar. Ao rodar, será mostrado o link do ser servidor local (“http://127.0.0.1:5000/”). Copie isso e jogue em um navegador web para abrir a aplicação.
 
 
 # ----- Autoria: -----
-# Alunos da Universidade Federal Rural de Pernambuco: 
+Alunos da Universidade Federal Rural de Pernambuco: 
 Adailson José\n \n
 Augusto Paiva
 Gabriela Peixoto
