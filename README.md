@@ -3,8 +3,11 @@ Versão: 1.0
 
 # ----- Pré-Requisitos: ------
 Sistema operacional: Windows
+
 Linguagem: Python 3.6
+
 Para criar o banco: MySQL Workbench 8.0.11
+
 Para rodar a aplicação: XAMPP v3.2.2 ou Wamp Server
 
 # ----- Guia de instalação para rodar o projeto: -----
