@@ -29,31 +29,31 @@
     <!-- Sidebar Holder -->
     <nav id="sidebar">
         <div class="sidebar-header">
-            <center><h2>Traffic Mining Recife</h2></center>
+            <center><h3>Traffic Mining</h3></center>
+            <center><h5>Recife</h5></center>
         </div>
 
         <ul class="list-group">
             {% if current_user.is_authenticated %}
             <li>
                 <a href="#home3Submenu" data-toggle="collapse" aria-expanded="false"
-                   class="dropdown-toggle">Correlações</a>
+                   class="dropdown-toggle">Mapas</a>
                 <ul class="collapse list-unstyled" id="home3Submenu">
 
                     <li>
-                        <a href="{{url_for('mapa_semaforos') }}">Mapa de ponto Semáforos</a>
-                    </li>
-
-                    <li>
-                        <a href="{{url_for('mapa_acidente') }}">Mapa de calor Acidentes</a>
+                        <a href="{{url_for('mapa_semaforos') }}">Semáforos</a>
                     </li>
                     <li>
-                        <a href="{{url_for('mapa_ponto_acidente') }}">Mapa de ponto Acidentes</a>
+                        <a href="{{url_for('mapa_acidente') }}">Acidentes (Calor)</a>
                     </li>
                     <li>
-                        <a href="{{url_for('mapa_equipamentos') }}">Mapa de ponto Equipamentos de Fiscalização</a>
+                        <a href="{{url_for('mapa_ponto_acidente') }}">Acidentes (Pontos)</a>
                     </li>
                     <li>
-                        <a href="{{url_for('gerente_correlacoes') }}">Gerente de pesquisas</a>
+                        <a href="{{url_for('mapa_equipamentos') }}">Equipamentos de Fiscalização</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('gerente_correlacoes') }}">Pesquisas</a>
                     </li>
 
                 </ul>
@@ -108,9 +108,11 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="{{url_for('index')}}">Home <span class="sr-only">(current)</span></a>
                     </li>
+                    <!--
                     <li class="nav-item">
                         <a class="nav-link" href="pagamento">Pagamento</a>
                     </li>
+                    -->
                     <li class="nav-item">
                         <a class="nav-link" href="contato">Contato</a>
                     </li>

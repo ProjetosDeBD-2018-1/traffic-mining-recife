@@ -17,10 +17,8 @@
 <div class="jumbotron">
     <form class="form-inline" method="POST" action="{{ url_for('graficos_acidentes') }}">
         <div class="jumbotron">
-            <h2>Buscar por: </h2>
-            <br>
             <div class="input-group">
-                <h6>Buscar por ano:&nbsp</h6>
+                <h2>Buscar por ano:&nbsp</h2>
                 <span class="input-group-addon"></span>
                 <select name="comp_select_ano" class="selectpicker form-control">
                     <option value=""></option>
@@ -32,8 +30,6 @@
             <br>
             <button type="submit" class="btn btn-lg btn-primary btn-block">Buscar</button>
         </div>
-        <br>
-
         <div class="graficos">
             <div class="graficos1e2" style="display: flex">
                 <div class="grafico1" style="padding: 20px">
@@ -129,12 +125,12 @@
                 bezierCurve: false,
               });
                console.log(barData);
-
-
-
                     </script>
                 </div>
             </div>
         </div>
+    </form>
+    </div>
 </body>
+</html>
 {% endblock %}
