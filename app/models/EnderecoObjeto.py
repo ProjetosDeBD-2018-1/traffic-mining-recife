@@ -14,7 +14,6 @@ class endereco(db.Model):
 
     acidente = db.relationship('acidente', backref='endereco', lazy='dynamic')
     equipamento_fiscalizacao = db.relationship('equipamento_fiscalizacao', backref='endereco', lazy='dynamic')
-    registro_infracao = db.relationship('registro_infracao', backref='endereco', lazy='dynamic')
     semaforo = db.relationship('semaforo', backref='endereco', lazy='dynamic')
 
     def __init__(self, codlocal, local1, local2, complemento, numero, bairro, latitude, longitude):

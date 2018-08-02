@@ -12,7 +12,7 @@ class entidade(db.Model):
     tipo_entidade = db.Column(db.Integer)
     razao_social = db.Column(db.String(50))
 
-    id_endereco = db.Column(db.Integer, db.ForeignKey('enderecoEntidade.id'))
+    id_endereco = db.Column(db.Integer, db.ForeignKey('enderecoentidade.id'))
     id_usuario = db.Column(db.Integer, db.ForeignKey('usuario.id'))
 
     def __init__(self, id, cnpj, estado, telefone, tipo_entidade, razao_social, id_endereco, id_usuario):

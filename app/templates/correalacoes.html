@@ -9,13 +9,15 @@
 </head>
 
 <body>
+<h2>Correlações </h2>
+<br>
 <div class="jumbotron">
-    <h2>Buscar acidentes por: </h2>
+    <h2>Buscar por: </h2>
     <br>
     <form action="" method="POST">
         {{ form.csrf_token }}
         <div class="form-group">
-            <label>Buscar por ano</label>
+            <label>Buscar por data</label>
             {{ form.buscaData(class="form-control",
             placeholder="'2017'") }}
             {% if form.errors.buscaData %}
@@ -36,7 +38,7 @@
         <div class="form-group">
             <label>Buscar por hora</label>
             {{ form.buscaHora(class="form-control",
-            placeholder="'00:00'") }}
+            placeholder="'00:00(HH:mm)'") }}
             {% if form.errors.buscaHora %}
             <div> <!--class="alert alert-danger" role="alert"-->
                 <ul>
@@ -68,7 +70,7 @@
         </div>
         <button type="submit" class="btn btn-lg btn-primary btn-block">Buscar</button>
     </form>
-        <br>
+    <br>
     <form action="" method="POST">
         {{ form.csrf_token }}
         <div class="form-group">
@@ -91,9 +93,9 @@
     <form action="" method="POST">
         {{ form.csrf_token }}
         <div class="form-group">
-            <label>Buscar quantidade de vítimas</label>
+            <label>Buscar Quantidade de Vítimas</label>
             {{ form.buscaQtd(class="form-control",
-            placeholder="'Ex: 1'") }}
+            placeholder="'Digite a quantidade de Vítimas Ex: 1'") }}
             {% if form.errors.buscaQtd %}
             <div> <!--class="alert alert-danger" role="alert"-->
                 <ul>
@@ -110,9 +112,9 @@
     <form action="" method="POST">
         {{ form.csrf_token }}
         <div class="form-group">
-            <label>Buscar Por Local</label>
+            <label>Buscar Acidentes Por Localização</label>
             {{ form.buscaLocal(class="form-control",
-            placeholder="'Boa Viagem'") }}
+            placeholder="'Digite o local Ex: Boa Viagem'") }}
             {% if form.errors.buscaLocal %}
             <div> <!--class="alert alert-danger" role="alert"-->
                 <ul>
@@ -125,7 +127,25 @@
         </div>
         <button type="submit" class="btn btn-lg btn-primary btn-block">Buscar</button>
     </form>
-
+    <br>
+    <form action="" method="POST">
+        {{ form.csrf_token }}
+        <div class="form-group">
+            <label>Buscar Acidentes e Semaforos Por Localização</label>
+            {{ form.buscaLocalAcidenteSemaforo(class="form-control",
+            placeholder="'Digite o local Ex: Boa Viagem'") }}
+            {% if form.errors.buscaLocalAcidenteSemaforo %}
+            <div> <!--class="alert alert-danger" role="alert"-->
+                <ul>
+                    {% for e in form.errors.buscaLocalAcidenteSemaforo %}
+                    <li>{{ e }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Buscar</button>
+    </form>
 </div>
 <br>
 </body>

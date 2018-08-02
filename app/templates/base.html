@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% block title %}Traffic Mining Recife{% endblock %}</title>
+    <title>{% block title %}Traffic Mining{% endblock %}</title>
 
     <!-- Sidebar head -->
     <!-- Bootstrap CSS CDN -->
@@ -29,31 +29,31 @@
     <!-- Sidebar Holder -->
     <nav id="sidebar">
         <div class="sidebar-header">
-            <center><h3>Traffic Mining</h3></center>
-            <center><h5>Recife</h5></center>
+            <center><h2>Traffic Mining</h2></center>
         </div>
 
         <ul class="list-group">
             {% if current_user.is_authenticated %}
             <li>
                 <a href="#home3Submenu" data-toggle="collapse" aria-expanded="false"
-                   class="dropdown-toggle">Mapas</a>
+                   class="dropdown-toggle">Correlações</a>
                 <ul class="collapse list-unstyled" id="home3Submenu">
 
                     <li>
-                        <a href="{{url_for('mapa_semaforos') }}">Semáforos</a>
+                        <a href="{{url_for('mapa_semaforos') }}">Mapa de ponto Semáforos</a>
+                    </li>
+
+                    <li>
+                        <a href="{{url_for('mapa_acidente') }}">Mapa de calor Acidentes</a>
                     </li>
                     <li>
-                        <a href="{{url_for('mapa_acidente') }}">Acidentes (Calor)</a>
+                        <a href="{{url_for('mapa_ponto_acidente') }}">Mapa de ponto Acidentes</a>
                     </li>
                     <li>
-                        <a href="{{url_for('mapa_ponto_acidente') }}">Acidentes (Pontos)</a>
+                        <a href="{{url_for('mapa_equipamentos') }}">Mapa de ponto Equipamentos de Fiscalização</a>
                     </li>
                     <li>
-                        <a href="{{url_for('mapa_equipamentos') }}">Equipamentos de Fiscalização</a>
-                    </li>
-                    <li>
-                        <a href="{{url_for('gerente_correlacoes') }}">Pesquisas</a>
+                        <a href="{{url_for('gerente_correlacoes') }}">Gerente de pesquisas</a>
                     </li>
 
                 </ul>
@@ -64,11 +64,6 @@
                     <li>
                         <a href="{{url_for('graficos_acidentes') }}">Gráficos de Acidentes</a>
                     </li>
-                    <!--
-                    <li>
-                        <a href="{{url_for('graficos_infracoes') }}">Gráficos de Infrações</a>
-                    </li>
-                    -->
                 </ul>
             </li>
             <li>
@@ -78,11 +73,6 @@
                     <li>
                         <a href="{{url_for('relatorio_acidentes') }}">Acidentes</a>
                     </li>
-                    <!--
-                    <li>
-                        <a href="{{url_for('relatorio_infracoes') }}">Infrações</a>
-                    </li>
-                    -->
                 </ul>
             </li>
             {% endif %}
@@ -112,11 +102,6 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="{{url_for('index')}}">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <!--
-                    <li class="nav-item">
-                        <a class="nav-link" href="pagamento">Pagamento</a>
-                    </li>
-                    -->
                     <li class="nav-item">
                         <a class="nav-link" href="contato">Contato</a>
                     </li>
@@ -141,7 +126,7 @@
 
         <footer class="footer">
             <br><br><br>
-            <center><p>&copy; 2018 Traffic Mining Recife.</p></center>
+            <center><p>&copy; 2018 Traffic Mining.</p></center>
         </footer>
 
         <!--<div class="footer">

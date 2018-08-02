@@ -2,7 +2,7 @@ from app import db
 
 
 class enderecoEntidade(db.Model):
-    __tablename__ = "enderecoEntidade"
+    __tablename__ = "enderecoentidade"
 
     id = db.Column(db.Integer, primary_key=True, autoincrement=False)
     rua = db.Column(db.String(35))
