@@ -15,7 +15,7 @@
     <form action="" method="POST">
         {{ form.csrf_token }}
         <div class="form-group">
-            <label>Buscar por data</label>
+            <label>Buscar por ano</label>
             {{ form.buscaData(class="form-control",
             placeholder="'2017'") }}
             {% if form.errors.buscaData %}
@@ -36,7 +36,7 @@
         <div class="form-group">
             <label>Buscar por hora</label>
             {{ form.buscaHora(class="form-control",
-            placeholder="'00:00(HH:mm)'") }}
+            placeholder="'00:00'") }}
             {% if form.errors.buscaHora %}
             <div> <!--class="alert alert-danger" role="alert"-->
                 <ul>
@@ -91,9 +91,9 @@
     <form action="" method="POST">
         {{ form.csrf_token }}
         <div class="form-group">
-            <label>Buscar Quantidade de Vítimas</label>
+            <label>Buscar quantidade de vítimas</label>
             {{ form.buscaQtd(class="form-control",
-            placeholder="'Digite a quantidade de Vítimas Ex: 1'") }}
+            placeholder="'Ex: 1'") }}
             {% if form.errors.buscaQtd %}
             <div> <!--class="alert alert-danger" role="alert"-->
                 <ul>
@@ -112,7 +112,7 @@
         <div class="form-group">
             <label>Buscar Por Local</label>
             {{ form.buscaLocal(class="form-control",
-            placeholder="'Digite o local Ex: Boa Viagem'") }}
+            placeholder="'Boa Viagem'") }}
             {% if form.errors.buscaLocal %}
             <div> <!--class="alert alert-danger" role="alert"-->
                 <ul>
